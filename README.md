@@ -27,6 +27,31 @@ The **Real-Time Data Processing System for Weather Monitoring with Rollups and A
 
 ---
 
+## Screenshots
+
+---
+
+### Weather Monitor Dashboard
+
+
+![Weather Monitor Dashboard](https://github.com/user-attachments/assets/df7fef12-822d-4400-9881-f66a5ceb36d2)
+
+### Historical Weather Data
+
+![Historical Weather Data](https://github.com/user-attachments/assets/d4823966-f8a6-4fbf-8893-776ad9ed621f)
+
+### Weather Alerts 
+
+**Threshold was set to 15°C for testing**
+
+![Weather Alerts](https://github.com/user-attachments/assets/6e1776f4-34ad-491f-9ce5-1b0d5fe76dec)
+
+**Alerts on Console**
+
+![image](https://github.com/user-attachments/assets/573b3fad-0746-4117-bb37-e47bd46a5081)
+
+---
+
 ## Technologies Used
 
 - **Python** (Backend Development)
