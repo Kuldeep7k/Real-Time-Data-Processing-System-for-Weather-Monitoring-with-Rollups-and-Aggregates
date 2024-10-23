@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Monitor Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <script src="{{ url_for('static', filename='style.css') }}"></script>
+  </head>
+  <body>
+    <h1>Weather Monitor Dashboard</h1>
+
+    <div class="graph-container">
+      <h2>Average Temperature Trend</h2>
+      <div>
+        {{ temp_graph_html | safe }}
+        <!-- Display the temperature graph -->
+      </div>
+    </div>
+
+    <div class="graph-container">
+      <h2>Wind Speed and Weather Condition</h2>
+      <div>
+        {{ additional_graph_html | safe }}
+        <!-- Display the additional data graph -->
+      </div>
+    </div>
+
+    <div class="button">
+      <a
+        href="/historical"
+        style="
+          text-decoration: none;
+          background-color: #4caf50;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+        "
+        >View Historical Data</a
+      >
+    </div>
+  </body>
+</html>

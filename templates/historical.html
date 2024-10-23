@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Weather Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="button">
+        <a href="/" style="text-decoration: none; background-color: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px;">Back to Dashboard</a>
+    </div>
+    <h1>Historical Weather Data</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>City</th>
+                <th>Average Temp (°C)</th>
+                <th>Max Temp (°C)</th>
+                <th>Min Temp (°C)</th>
+                <th>Dominant Condition</th>
+                <th>Wind Speed (m/s)</th>
+                <th>Wind Direction (°)</th>
+                <th>Visibility (m)</th>
+                <th>Cloudiness (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in summaries %}
+                <tr>
+                    <td>{{ entry[1] }}</td>
+                    <td>{{ entry[0] }}</td>
+                    <td>{{ entry[2] }}</td>
+                    <td>{{ entry[3] }}</td>
+                    <td>{{ entry[4] }}</td>
+                    <td>{{ entry[5] }}</td>
+                    <td>{{ entry[6] }}</td>
+                    <td>{{ entry[7] }}</td>
+                    <td>{{ entry[8] }}</td>
+                    <td>{{ entry[9] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

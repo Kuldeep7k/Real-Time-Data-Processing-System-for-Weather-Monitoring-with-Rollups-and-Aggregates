@@ -1,0 +1,39 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f4f4f4;
+}
+tr {
+  height: 50px;
+}
+
+tbody tr {
+  border-bottom: 20px solid white; 
+}
+.button {
+  margin-bottom: 20px; 
+  text-align: center; 
+  margin-top: 20px;
+}
+h1 {
+  text-align: center; 
+}
+
+.button {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.graph-container {
+  margin: 20px 0; 
+}
+

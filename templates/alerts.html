@@ -1,0 +1,30 @@
+<!-- templates/alerts.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Alerts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="button">
+        <a href="/" style="text-decoration: none; background-color: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px;">Back to Dashboard</a>
+    </div>
+    <h1>Weather Alerts</h1>
+    <table>
+        <tr>
+            <th>City</th>
+            <th>Alert Message</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for city, message, timestamp in alerts %}
+        <tr>
+            <td>{{ city }}</td>
+            <td>{{ message }}</td>
+            <td>{{ timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
