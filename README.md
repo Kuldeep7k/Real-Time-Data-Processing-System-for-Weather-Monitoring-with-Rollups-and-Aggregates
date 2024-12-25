@@ -1,7 +1,7 @@
 # Real-Time Data Processing System for Weather Monitoring with Rollups and Aggregates
 ## Introduction
 
-This project is part of an assignment for securing an internship as a backend developer. The **Real-Time Data Processing System for Weather Monitoring with Rollups and Aggregates** continuously fetches weather data for multiple cities, stores daily summaries in a database, and triggers weather alerts based on configurable thresholds. The project showcases my backend development skills using Python, Flask, and REST APIs.
+The **Real-Time Data Processing System for Weather Monitoring with Rollups and Aggregates** continuously fetches weather data for multiple cities, stores daily summaries in a database, and triggers weather alerts based on configurable thresholds. The project showcases my backend development skills using Python, Flask, and REST APIs.
 
 ---
 
